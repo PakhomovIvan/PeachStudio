@@ -88,6 +88,111 @@ header {
   }
 }
 
-.map {
+.navigate__map {
   margin: 0 auto;
+}
+
+.wrapper__mission {
+  margin-top: 95px;
+  padding: 92px 70px 141px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: colors.$primary-text-hover;
+
+  p {
+    padding: 0 5px;
+    line-height: 140%;
+    letter-spacing: 0.009rem;
+    color: colors.$second-text;
+  }
+}
+
+.wrapper__business-lines {
+  margin-top: 53px;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  h2 {
+    color: colors.$primary-text;
+    text-align: center;
+  }
+
+  .lines {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    .lines__item {
+      position: relative;
+      display: flex;
+      width: 615px;
+      height: 260px;
+
+      &:hover .lines__item-cover {
+        margin-top: 0;
+      }
+
+      .lines__item-cover {
+        margin-top: 190px;
+        padding-top: 28px;
+        padding-left: 20px;
+        background: colors.$background-card;
+        opacity: 0.6;
+        transition: 0.5s ease-in-out;
+      }
+
+      p {
+        margin-bottom: 20px;
+        color: colors.$second-text;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0%;
+      }
+
+      span {
+        color: colors.$second-text;
+        font-family: 'ProximaReg';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0%;
+      }
+
+      &.softline {
+        background: url('/img/backgrounds/bg-image-1.jpeg');
+      }
+
+      &.import-substitution {
+        background: url('/img/backgrounds/bg-image-2.jpeg');
+      }
+
+      &.cybersecurity {
+        background: url('/img/backgrounds/bg-image-4.jpeg');
+      }
+
+      &.import-substitution {
+        background: url('/img/backgrounds/bg-image-2.jpeg');
+      }
+
+      &.cloud-solutions {
+        background: url('/img/backgrounds/bg-image-5.jpeg');
+      }
+
+      &.develop {
+        background: url('/img/backgrounds/bg-image-3.jpeg');
+      }
+
+      &.tech-support {
+        background: url('/img/backgrounds/bg-image-6.jpeg');
+        background-size: cover;
+        background-position: center -50px;
+      }
+    }
+  }
 }

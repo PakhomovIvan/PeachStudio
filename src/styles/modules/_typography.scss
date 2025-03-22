@@ -29,6 +29,15 @@ h1 {
   color: colors.$primary-text-hover;
 }
 
+h2 {
+  font-family: 'ProximaReg';
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: 0.05rem;
+  color: colors.$second-text;
+}
+
 p {
   font-family: 'ProximaReg';
   font-size: 32px;
