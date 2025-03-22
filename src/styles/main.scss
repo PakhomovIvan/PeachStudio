@@ -1,2 +1,37 @@
 @use './modules/normalize';
 @use './modules/typography';
+@use './modules/colors';
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+header {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    margin-left: 7px;
+  }
+
+  a {
+    margin-right: 20px;
+    font-family: 'Proxima';
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.001rem;
+    color: colors.$primary-text;
+    transition: 0.3s ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: colors.$primary-text-hover;
+    }
+  }
+}
