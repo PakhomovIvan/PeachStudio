@@ -13,16 +13,12 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  img {
-    margin-left: 7px; //FIX
-  }
-
   a {
     margin-right: 20px;
     transition: 0.3s ease-in-out;
 
     &:last-child {
-      margin-right: 10px; //FIX
+      margin-right: 0; //FIX
     }
 
     &:hover {
@@ -31,7 +27,7 @@ header {
   }
 }
 
-.about {
+.wrapper__about {
   margin: 79px 70px;
   display: flex;
   flex-direction: column;
@@ -40,5 +36,52 @@ header {
 
   p {
     text-align: center;
+  }
+}
+
+.navigate {
+  margin: 0 70px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 40px 0px #0000000f;
+
+  button {
+    margin-right: 15px;
+    background: none;
+  }
+
+  .navigate__offices {
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    gap: 30px;
+
+    li {
+      position: relative;
+      cursor: pointer;
+      list-style-type: none;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: colors.$primary-text-hover;
+      }
+    }
+
+    li.active {
+      color: colors.$primary-text-hover;
+    }
+
+    li.active::before {
+      content: '';
+      position: absolute;
+      top: 46px;
+      width: 100%;
+      height: 3px;
+      background: colors.$primary-text-hover;
+    }
   }
 }
