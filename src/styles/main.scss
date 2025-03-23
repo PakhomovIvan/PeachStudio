@@ -99,7 +99,9 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: colors.$primary-text-hover;
+  background: url(/public/img/images/left-pattern.svg) no-repeat left,
+    url(/public/img/images/right-pattern.svg) no-repeat right,
+    colors.$primary-text-hover no-repeat;
 
   p {
     padding: 0 5px;
