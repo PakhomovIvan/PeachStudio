@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer type="module" src="./src/scripts/swiper.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -222,28 +223,15 @@
                 <div class="swiper-slide">
                   <img src="/img/images/slider_4.png" alt="slider-image" />
                 </div>
+                <div class="swiper-slide">
+                  <img src="/img/images/slider_5.png" alt="slider-image" />
+                </div>
               </div>
-              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
-          <div class="paginator">
-            <span></span><span></span><span></span><span></span><span></span>
-          </div>
+          <div class="paginator"></div>
         </div>
       </main>
     </div>
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        effect: 'coverflow',
-        navigation: {
-          nextEl: '.next',
-          prevEl: '.prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-        keyboard: true,
-      })
-    </script>
   </body>
 </html>

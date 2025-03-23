@@ -307,7 +307,7 @@ header {
       transition: 0.3s ease-in-out;
 
       &:hover {
-        background: #a7a7a7;
+        background: #cdcdcd;
       }
 
       width: 56px;
@@ -331,9 +331,21 @@ header {
 }
 
 .paginator {
-  span {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 67px;
+  margin-top: 28px;
+
+  .swiper-pagination-bullet {
     width: 214px;
     height: 6px;
     background: rgb(0, 0, 0);
+    opacity: 0.1;
+    border-radius: 0;
+
+    &.swiper-pagination-bullet-active {
+      background: rgb(163, 12, 51);
+      opacity: 1;
+    }
   }
 }
