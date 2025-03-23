@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer type="module" src="./src/scripts/swiper.js"></script>
+    <script defer type="module" src="./src/scripts/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -36,8 +36,14 @@
         <div class="wrapper__map-navigation">
           <div class="navigate">
             <div class="navigate__offices">
-              <button>Офисы Softline</button>
-              <img src="/img/icons/arrow.png" alt="arrow" />
+              <p>Офисы Softline</p>
+              <div>
+                <img
+                  class="navigate__offices-arrow"
+                  src="/img/icons/arrow.png"
+                  alt="arrow"
+                />
+              </div>
             </div>
             <nav>
               <li class="active">Все</li>
@@ -50,6 +56,58 @@
               <li>Сибирь</li>
               <li>Дальний восток</li>
             </nav>
+          </div>
+          <div class="navigate__list">
+            <div class="list__item">
+              <p><b>Москва</b></p>
+            </div>
+            <div class="list__item">
+              <p><b>Центр</b></p>
+              <p>Воронеж</p>
+              <p>Ярославль</p>
+              <p>Белгород</p>
+            </div>
+            <div class="list__item">
+              <p><b>Северо-Запад</b></p>
+              <p>Санкт-Петербург</p>
+              <p>Калининград</p>
+            </div>
+            <div class="list__item">
+              <p><b>Юг</b></p>
+              <p>Ростов-на-Дону</p>
+              <p>Краснодар</p>
+              <p>Волгоград</p>
+            </div>
+            <div class="list__item">
+              <p><b>Волга</b></p>
+              <p>Казань</p>
+              <p>Самара</p>
+              <p>Уфа</p>
+              <p>Оренбург</p>
+              <p>Нижний Новгород</p>
+            </div>
+            <div class="list__item">
+              <p><b>Урал</b></p>
+              <p>Екатеринбург</p>
+              <p>Челябинск</p>
+              <p>Пермь</p>
+              <p>Сургут</p>
+              <p>Тюмень</p>
+              <p>Ижевск</p>
+            </div>
+            <div class="list__item">
+              <p><b>Сибирь</b></p>
+              <p>Новосибирск</p>
+              <p>Омск</p>
+              <p>Томск</p>
+              <p>Красноярск</p>
+              <p>Иркутск</p>
+            </div>
+            <div class="list__item">
+              <p><b>Дальний восток</b></p>
+              <p>Хабаровск</p>
+              <p>Владимир</p>
+            </div>
           </div>
           <div class="navigate__map">
             <img src="/img/images/map.png" alt="offices-map" />
