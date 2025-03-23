@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peach Test</title>
     <link rel="stylesheet" href="./src/styles/main.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -17,7 +22,7 @@
           <a href="#">Цифровая трансформация</a>
         </nav>
       </header>
-      <body>
+      <main>
         <div class="wrapper__about">
           <h1>Softline</h1>
           <p>
@@ -137,25 +142,25 @@
               </div>
               <div class="package__item">
                 <div class="item-cover">
-                  <img src="/public/img/icons/birthday.svg" alt="birthday" />
+                  <img src="/img/icons/birthday.svg" alt="birthday" />
                 </div>
                 <span>Выходной<br />в день рождения</span>
               </div>
               <div class="package__item">
                 <div class="item-cover">
-                  <img src="/public/img/icons/mobile.svg" alt="mobile" />
+                  <img src="/img/icons/mobile.svg" alt="mobile" />
                 </div>
                 <span>Корпоративная мобильная связь</span>
               </div>
               <div class="package__item">
                 <div class="item-cover">
-                  <img src="/public/img/icons/sport.svg" alt="sport" />
+                  <img src="/img/icons/sport.svg" alt="sport" />
                 </div>
                 <span>Корпоративные скидки на спорт</span>
               </div>
               <div class="package__item">
                 <div class="item-cover">
-                  <img src="/public/img/icons/lti.svg" alt="lti" />
+                  <img src="/img/icons/lti.svg" alt="lti" />
                 </div>
                 <span>LTI</span>
               </div>
@@ -190,7 +195,55 @@
             </div>
           </div>
         </div>
-      </body>
+        <div class="wrapper__corp-life">
+          <div class="corp-life__header">
+            <h2>Корпоративная жизнь</h2>
+            <div class="arrow-block">
+              <div class="arrow prev">
+                <img src="/img/icons/slider-arrow.svg" alt="prev" />
+              </div>
+              <div class="arrow next">
+                <img src="/img/icons/slider-arrow.svg" alt="next" />
+              </div>
+            </div>
+          </div>
+          <div class="corp-life__slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/img/images/slider_1.png" alt="slider-image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/images/slider_2.png" alt="slider-image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/images/slider_3.png" alt="slider-image" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/img/images/slider_4.png" alt="slider-image" />
+                </div>
+              </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+          <div class="paginator">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </main>
     </div>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        navigation: {
+          nextEl: '.next',
+          prevEl: '.prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        keyboard: true,
+      })
+    </script>
   </body>
 </html>
