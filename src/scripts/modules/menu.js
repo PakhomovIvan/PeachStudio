@@ -5,7 +5,7 @@ export const menuSlider = () => {
   const navigateMap = document.querySelector('.navigate__map')
 
   const testNav = document.querySelectorAll('.nav-menu')
-  const testTestNav = document.querySelector('#testtest')
+  const testTestNav = document.querySelector('#nav-menu-item')
 
   menuNavLogo.addEventListener('click', () => {
     listNav.classList.toggle('show')

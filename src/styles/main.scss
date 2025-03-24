@@ -140,6 +140,12 @@ header {
   }
 }
 
+#nav-menu-item {
+  ul {
+    display: contents;
+  }
+}
+
 .navigate__list.show {
   display: flex;
   top: 100px;
