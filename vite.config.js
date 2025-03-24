@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: 'https://pakhomovivan.github.io/PeachStudio/',
+  // base: 'https://pakhomovivan.github.io/PeachStudio/',
   build: {
     outDir: './dist',
     rollupOptions: {
