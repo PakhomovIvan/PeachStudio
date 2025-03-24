@@ -4,7 +4,7 @@ export const menuSlider = () => {
   const listNavArrow = document.querySelector('.navigate__offices-arrow')
   const navigateMap = document.querySelector('.navigate__map')
 
-  const testNav = document.querySelectorAll('#nav-menu')
+  const testNav = document.querySelectorAll('.nav-menu')
   const testTestNav = document.querySelector('#testtest')
 
   menuNavLogo.addEventListener('click', () => {
@@ -13,12 +13,14 @@ export const menuSlider = () => {
   })
 
   testTestNav.addEventListener('click', (e) => {
-    if (e.target.id === 'nav-menu') {
+    if (e.target.className === 'nav-menu') {
       testNav.forEach((e) => {
         e.classList.remove('active')
       })
       e.target.classList.add('active')
-      navigateMap.innerHTML = `<img src="/img/images/map/${e.target.innerText}.svg" alt="offices-map" />`
+
+      navigateMap.innerHTML = `<img src="/img/images/map/${e.target.id}.svg" alt="offices-map" />`
     }
+    console.log(e)
   })
 }
