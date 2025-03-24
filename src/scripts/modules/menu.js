@@ -19,7 +19,7 @@ export const menuSlider = () => {
       })
       e.target.classList.add('active')
 
-      navigateMap.innerHTML = `<img src="/img/images/map/${e.target.id}.svg" alt="offices-map" />`
+      navigateMap.innerHTML = `<img src="./img/images/map/${e.target.id}.svg" alt="offices-map" />`
     }
     console.log(e)
   })
