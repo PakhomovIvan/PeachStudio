@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist -r https://github.com/PakhomovIvan/PeachStudio.git"
   },
   "devDependencies": {
     "vite": "^6.2.0"
