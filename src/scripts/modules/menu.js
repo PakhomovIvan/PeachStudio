@@ -20,7 +20,7 @@ export const menuSlider = () => {
         e.classList.remove('active')
       })
       e.target.classList.add('active')
-      navMap.style.background = `url("./img/images/map/${e.target.id}.svg") no-repeat`
+      navMap.style.background = `url("./img/images/map/${e.target.id}.svg") no-repeat center`
     }
   })
 }
