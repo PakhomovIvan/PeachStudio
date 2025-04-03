@@ -89,16 +89,15 @@ header {
     }
 
     h2 {
-      color: rgb(163, 12, 51);
+      color: colors.$primary-text-hover;
       font-size: 40px;
       font-weight: 600;
       line-height: 80%;
-      letter-spacing: 0;
       margin: 4px 0;
     }
 
     p {
-      color: rgb(68, 68, 68);
+      color: colors.$primary-text;
       font-size: 16px;
       font-weight: 400;
       line-height: 140%;
@@ -111,6 +110,37 @@ header {
   display: flex;
   flex-direction: column;
   gap: 89px;
+
+  @media screen and (max-width: 320px) {
+    margin-top: 62px;
+
+    .navigate {
+      gap: 20px;
+
+      #nav-menu-item {
+        li {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+        }
+
+        li.active::before {
+          top: 35px;
+        }
+      }
+
+      .navigate__offices {
+        gap: 4px;
+
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+      }
+    }
+  }
 }
 
 .navigate {
